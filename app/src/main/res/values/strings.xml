@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Haroof Quiz App</string>
+    <string name="arabic_letters">Arabic Letters</string>
+    <string name="sound">Sound</string>
 </resources>

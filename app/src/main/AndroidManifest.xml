@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HaroofQuizApp">
         <activity
+            android:name=".GhunnaContent"
+            android:exported="false" />
+        <activity
+            android:name=".LisaveyahContent"
+            android:exported="false" />
+        <activity
+            android:name=".Niteeyah"
+            android:exported="false" />
+        <activity
+            android:name=".TarfiyahContent"
+            android:exported="false" />
+        <activity
+            android:name=".sharjariyahContent"
+            android:exported="false" />
+        <activity
+            android:name=".LahatiyahContent"
+            android:exported="false" />
+        <activity
+            android:name=".HalqiyahContent"
+            android:exported="false" />
+        <activity
             android:name=".QuizPage"
             android:exported="false" />
         <activity
