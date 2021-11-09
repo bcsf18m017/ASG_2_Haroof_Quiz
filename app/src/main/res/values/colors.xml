@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gitBack">#0D1117</color>
+    <color name="orange">#FF8000</color>
+    <color name="green">#09E385</color>
+    <color name="yellow">#E309D8</color>
+    <color name="red">#E30910</color>
+    <color name="darkGreen">#025A05</color>
+    <color name="blue">#003366</color>
+    <color name="lightpink">#ff9999</color>
+
 </resources>
