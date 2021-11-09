@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppFront"
+    android:background="@drawable/background"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="279dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/roundedborders"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Arabic Letters App"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/learn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/learn"
+        android:layout_width="175dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/roundedborders"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/aldrich"
+        android:text="Learn"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/practice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/quiz"
+        android:layout_width="175dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/roundedborders"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/aldrich"
+        android:text="Quiz"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/practice" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/practice"
+        android:layout_width="175dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/roundedborders"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/aldrich"
+        android:text="Practice"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/learn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
