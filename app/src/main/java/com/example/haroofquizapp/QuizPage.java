@@ -38,6 +38,13 @@ public class QuizPage extends AppCompatActivity {
             }
 
         });
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nextButtonClick();
+            }
+
+        });
         option1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -97,39 +104,20 @@ public class QuizPage extends AppCompatActivity {
 
     public void optionClick(Button btn)
     {
+        isAnswered=true;
         disableClick();
         Log.i("NOM","IN");
         String str=btn.getText().toString();
         if(answerCheck(str))
         {
             btn.setBackgroundColor(getResources().getColor(R.color.green));
+            score++;
         }
         else
         {
             btn.setBackgroundColor(getResources().getColor(R.color.red));
             rightButton(str).setBackgroundColor(getResources().getColor(R.color.green));
 
-        }
-        if(questionCount==10)
-        {
-            Toast.makeText(QuizPage.this,"Questions Completed", Toast.LENGTH_SHORT).show();
-            Intent intent=new Intent(QuizPage.this,ResultPage.class);
-            intent.putExtra("score",score);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-        }
-        else
-        {
-            resetColor();;
-            enableClick();
-            generateRandomOptions();
-            haraf.setText(haroof.keySet().toArray()[questionsAsked[questionCount]].toString());
-            option1.setText(options[randomOptions[0]]);
-            option2.setText(options[randomOptions[1]]);
-            option3.setText(options[randomOptions[2]]);
-            option4.setText(options[randomOptions[3]]);
-            questionCount++;
-            isAnswered=false;
         }
     }
 
@@ -235,6 +223,7 @@ public class QuizPage extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             Intent intent=new Intent(QuizPage.this,ResultPage.class);
+                            Log.i("NOMAN",Integer.toString(score));
                             intent.putExtra("score",score);
                             startActivity(intent);
                             finish();
@@ -305,7 +294,8 @@ public class QuizPage extends AppCompatActivity {
         option2=(Button) findViewById(R.id.option2);
         option3=(Button) findViewById(R.id.option3);
         option4=(Button) findViewById(R.id.option4);
-             finish=(Button) findViewById(R.id.finish);
+        next=(Button) findViewById(R.id.next);
+        finish=(Button) findViewById(R.id.finish);
         haraf=(TextView) findViewById(R.id.haraf);
         question=(TextView) findViewById(R.id.question);
         randomOptions=new int[4];

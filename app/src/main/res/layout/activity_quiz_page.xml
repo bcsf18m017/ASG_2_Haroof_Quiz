@@ -115,9 +115,29 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            android:layout_width="105dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/white"
+            android:padding="5dp"
+            android:background="@drawable/roundedborders"
+            android:text="Next"
+            android:textColorHighlight="@color/black"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/finish"
             android:layout_width="105dp"
             android:layout_height="52dp"
+            android:layout_marginStart="128dp"
             android:layout_marginEnd="59dp"
             android:background="@drawable/roundedborders"
             android:backgroundTint="@color/white"
@@ -125,8 +145,12 @@
             android:text="Finish"
             android:textColor="@color/black"
             android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/next"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="582dp" />
+            app:layout_constraintHorizontal_bias="0.916"
+            app:layout_constraintStart_toEndOf="@+id/next"
+            app:layout_constraintTop_toTopOf="@+id/next"
+            app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
