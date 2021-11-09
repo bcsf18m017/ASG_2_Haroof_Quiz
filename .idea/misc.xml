@@ -6,7 +6,10 @@
         <entry key="..\:/Users/K9181/AndroidStudioProjects/HaroofQuizApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.17685185185185184" />
         <entry key="..\:/Users/K9181/AndroidStudioProjects/HaroofQuizApp/app/src/main/res/drawable/roundedborders.xml" value="0.17685185185185184" />
         <entry key="..\:/Users/K9181/AndroidStudioProjects/HaroofQuizApp/app/src/main/res/layout/activity_app_front.xml" value="0.2" />
+        <entry key="..\:/Users/K9181/AndroidStudioProjects/HaroofQuizApp/app/src/main/res/layout/activity_learn_page.xml" value="0.1" />
         <entry key="..\:/Users/K9181/AndroidStudioProjects/HaroofQuizApp/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/K9181/AndroidStudioProjects/HaroofQuizApp/app/src/main/res/layout/activity_practice_page.xml" value="0.1" />
+        <entry key="..\:/Users/K9181/AndroidStudioProjects/HaroofQuizApp/app/src/main/res/layout/activity_quiz_page.xml" value="0.1" />
       </map>
     </option>
   </component>

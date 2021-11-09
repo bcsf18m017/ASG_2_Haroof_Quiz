@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HaroofQuizApp">
         <activity
+            android:name=".QuizPage"
+            android:exported="false" />
+        <activity
+            android:name=".PracticePage"
+            android:exported="false" />
+        <activity
+            android:name=".LearnPage"
+            android:exported="false" />
+        <activity
             android:name=".AppFront"
             android:exported="false" />
         <activity
