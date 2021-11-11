@@ -12,6 +12,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -53,7 +54,14 @@ public class ResultPage extends AppCompatActivity {
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                share();
+                Intent intent=new Intent(Intent.ACTION_SEND);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.setType("text");
+                intent.putExtra(Intent.EXTRA_TEXT,"Here is my score "+temp+"/10\nCome Play With Me");
+                Uri uri=Uri.parse("Here is my score "+temp+"/10\nCome Play With Me");
+                intent.putExtra(Intent.EXTRA_STREAM, uri);
+                startActivity(Intent.createChooser(intent, "Share Image"));
+                //share();
             }
         });
 

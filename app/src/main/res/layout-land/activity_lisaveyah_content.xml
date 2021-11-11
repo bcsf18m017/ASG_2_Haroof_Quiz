@@ -135,7 +135,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="150dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="8dp"
             android:lines="4"
             android:text="Tip of the tongue \n comes between the\n front top and bottom\n teeth"
             android:textColor="@color/white"
@@ -143,15 +143,15 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/imageView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.929"
+            app:layout_constraintHorizontal_bias="0.381"
             app:layout_constraintStart_toEndOf="@+id/letter2" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="290dp"
             android:layout_height="240dp"
-            android:layout_marginEnd="60dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="232dp"
+            android:layout_marginBottom="28dp"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

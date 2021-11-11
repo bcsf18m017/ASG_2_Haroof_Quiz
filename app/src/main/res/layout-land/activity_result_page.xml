@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ResultPage">
+
+
+    <!--progress bar implementation-->
+
+    <!--Text implementation in center of the progress bar-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myLayout"
+        android:background="@drawable/background">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="77dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/aldrich"
+            android:text="Result"
+            android:textColor="@color/white"
+            android:textSize="70dp"
+            app:layout_constraintBottom_toTopOf="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="281dp"
+            android:layout_height="249dp"
+
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="61dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/progressshape"
+            android:indeterminate="false"
+            android:max="10"
+            android:progress="10"
+            android:progressBackgroundTint="@color/red"
+            android:progressDrawable="@drawable/progressbar"
+            android:progressTint="@color/green"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.734"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="10/10"
+            android:textColor="@color/red"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar"
+            app:layout_constraintStart_toStartOf="@+id/progressBar"
+            app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+        <Button
+            android:id="@+id/main"
+            android:layout_width="170dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="172dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/roundedborders"
+            android:padding="20dp"
+            android:text="Main Screen"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_gravity="right"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="164dp"
+            android:layout_marginEnd="63dp"
+            android:layout_marginBottom="74dp"
+            app:layout_constraintBottom_toTopOf="@+id/share"
+            app:layout_constraintEnd_toStartOf="@+id/progressBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/boy" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="94dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="58dp"
+            app:layout_constraintBottom_toBottomOf="@+id/main"
+            app:layout_constraintEnd_toStartOf="@+id/main"
+            app:layout_constraintHorizontal_bias="0.301"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/main"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_baseline_share_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
